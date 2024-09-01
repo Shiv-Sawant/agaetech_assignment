@@ -9,11 +9,10 @@ const PostContents = ({ datas }: IPostContents) => {
     const getLocalPosts = localStorage.getItem('posts')
     const parseData = getLocalPosts && JSON.parse(getLocalPosts) || []
     useEffect(() => {
-        const element = document.querySelectorAll('#common-sub-header')
+        const element = document.querySelectorAll<HTMLElement>('#common-sub-header')
         if (element) {
             element.forEach(ele => {
-            ele.style.color = 'rgba(24, 133, 255, 255)'
-                
+                ele.style.color = 'rgba(24, 133, 255, 255)'
             });
         }
     }, [datas])
