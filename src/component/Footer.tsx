@@ -1,8 +1,9 @@
-import React from 'react'
-
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div className="blog-footer">
+      <div>Blog template build for <span className="common-sub-header">Bootstrap</span> by <span className="common-sub-header">@mdo</span>.</div>
+      <div><span className="common-sub-header">Back to top</span></div>
+    </div>
   )
 }
 

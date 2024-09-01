@@ -3,9 +3,9 @@ import Blog from './page/Blog'
 
 function App() {
   return (
-    <div className='blog-page'>
+    <div className='main-page'>
       <Blog />
-    </div>
+     </div>
   )
 }
 

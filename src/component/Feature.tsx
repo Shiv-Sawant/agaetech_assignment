@@ -8,10 +8,10 @@ const Feature = () => {
           return (
             <div key={index} className="blog-feature-box">
               <div className="blog-feature-content">
-                <div><h3>World</h3></div>
+                <div><h3>{list.title}</h3></div>
                 <div>
-                  <h2>Featured Post</h2>
-                  <span>Nov 12</span>
+                  <h2>{list.postHead}</h2>
+                  <span>{list.date}</span>
                 </div>
                 <div>
                   <p>This is wider card with supporting text<br /> below as a natural lead-in to additional<br /> content.</p>

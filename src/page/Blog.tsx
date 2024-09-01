@@ -8,12 +8,14 @@ import Posts from "../component/Posts"
 const Blog = () => {
   return (
     <>
-      <Header />
-      <Navbar />
-      <HeroSection />
-      <Feature />
-      <Posts />
-      <Footer/>
+      <div className="blog-page">
+        <Header />
+        <Navbar />
+        <HeroSection />
+        <Feature />
+        <Posts />
+      </div>
+        <Footer />
     </>
   )
 }

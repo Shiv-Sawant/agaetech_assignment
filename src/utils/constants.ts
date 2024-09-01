@@ -1,8 +1,17 @@
 export const NavbarList = ['World', 'U.S.', 'Technology', 'Design', 'Culture', 'Business', 'Politics', 'Opinion', 'Science', 'Health', 'Style', 'Travel']
 
 export const FeatureList = [
-    {},
-    {}
+    {
+        title: 'World',
+        postHead: 'Featured post',
+        date: 'Nov 12',
+        // content:'',
+    },
+    {
+        title: 'Design',
+        postHead: 'Post title',
+        date: 'Nov 11',
+    }
 ]
 
 export const Archives = [
@@ -25,3 +34,15 @@ export const Elsewhere = [
     'Twitter',
     'Facebook'
 ]
+
+export const posts = [
+    {
+        title: 'Sample blog post',
+        metaData: 'Januvary 1, 2014 by',
+        name:'Mark',
+        content: [
+            
+        ]
+    }
+]
+
