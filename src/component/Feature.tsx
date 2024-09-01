@@ -14,7 +14,7 @@ const Feature = () => {
                   <span>{list.date}</span>
                 </div>
                 <div>
-                  <p>This is wider card with supporting text<br /> below as a natural lead-in to additional<br /> content.</p>
+                  <p>This is wider card with supporting text below as a natural lead-in to additional content.</p>
                 </div>
                 <div>
                   <h4 className="common-sub-header">Continue reading</h4>
