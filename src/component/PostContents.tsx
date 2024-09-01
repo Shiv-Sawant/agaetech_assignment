@@ -1,4 +1,12 @@
-const PostContents = () => {
+import { useEffect } from "react"
+
+const PostContents = ({ datas }) => {
+    const getLocalPosts: any = localStorage.getItem('posts')
+    const parseData = JSON.parse(getLocalPosts) || []
+
+    useEffect(() => {
+
+    }, [datas])
     return (
         <>
             <div className="post-section-content">
@@ -85,6 +93,24 @@ const PostContents = () => {
                 </div>
 
             </div>
+
+            {
+                parseData.length != 0 && parseData.map((data: any, index: any) => {
+                    return (
+                        <div className="post-section-content" key={index}>
+                            <div className="post-content-head">
+                                <h1 className="post-content-head-title">{data.PostTitle}</h1>
+                                <p>December 14, 2013 by <span className="common-sub-header">{data.PostBy}</span></p>
+                            </div>
+                            <div className="post-content-body">
+                                <p>
+                                    {data.PostContent}
+                                </p>
+                            </div>
+                        </div>
+                    )
+                })
+            }
 
             <div className="post-section-buttons">
                 <button>Older</button>
