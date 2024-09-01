@@ -2,34 +2,26 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    /* font-family: sans-serif; */
   }
 
   /* scroll bar */
-
   .form-box::-webkit-scrollbar {
     display: none;
   }
 
   /* blog page start*/
-
   .main-page {
-    /* background-color: red; */
     height: 100vh;
     width: 100vw;
-    /* padding: 0 15rem; */
     overflow-x: hidden;
   }
 
   .blog-page {
-    /* padding: 0 15rem; */
     padding: 0 10vw;
   }
-
   /* blog page end*/
 
   /* blog header start */
-
   .blog-header {
     height: 60px;
     display: flex;
@@ -69,16 +61,12 @@
     align-items: center;
     justify-content: center;
   }
-
   /* blog header end */
 
   /* blog navbar start */
-
   .blog-navbar {
     width: 100%;
     display: flex;
-    /* height: 50px; */
-    /* line-height: 3rem; */
     padding: 1rem 0;
     display: flex;
     align-items: center;
@@ -92,11 +80,9 @@
     text-decoration: none;
     font-size: 1.2rem;
   }
-
   /* blog navbar end */
 
   /* blog hero section start */
-
   .hero-section {
     background-color: rgba(52, 58, 64, 255);
     color: white;
@@ -112,37 +98,28 @@
 
   .hero-section h1 {
     font-size: 3.7rem;
-    /* font-size: 4vw; */
     font-style: italic;
-    /* font-family: sans-serif; */
-
   }
 
   .hero-section p {
     font-size: 1.1rem;
     line-height: 2rem;
     font-family: sans-serif;
-
   }
 
   .hero-section h3 {
     font-style: 1rem;
     font-family: sans-serif;
   }
-
   /* blog hero section end */
 
   /* blog feature start */
-
   .blog-feature {
-    /* background-color: red; */
     width: 100%;
-    /* height: 280px; */
     display: flex;
     gap: 3rem;
     align-items: center;
     justify-content: center;
-    /* justify-content: space-between; */
     flex-wrap: wrap;
     margin-bottom: 30px;
   }
@@ -188,21 +165,15 @@
     align-items: center;
     justify-content: center;
     flex-grow: 1;
-
   }
-
   /* blog feature end */
 
   /* blog posts start */
-
   .post-section {
-    /* background-color: red; */
     width: 100%;
-    /* height: 800px; */
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
   }
 
   .post-section-box {
@@ -283,19 +254,15 @@
   .post-section-feature {
     display: flex;
     flex-direction: column;
-    /* background-color: red; */
-    /* height: 700px; */
     width: 32.5%;
     margin-bottom: 20px;
     gap: 2rem;
     flex-grow: 1;
-    /* justify-content: space-between; */
   }
 
   .post-section-feautre-about {
     background-color: rgba(238, 238, 238, 1);
     padding: 1.5rem;
-    /* flex-grow: 1; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -306,11 +273,9 @@
     font-size: 1.2rem;
     line-height: 2rem;
   }
-
   /* blog posts end */
 
   /* blog footer end */
-
   .blog-footer {
     background-color: rgba(249, 249, 249, 255);
     height: 200px;
@@ -322,11 +287,9 @@
     color: gray;
     font-size: 1.2rem;
   }
-
   /* blog footer end */
 
   /* common sub header */
-
   .common-sub-header {
     color: rgba(24, 133, 255, 255);
     font-size: 1.1rem;
@@ -343,11 +306,10 @@
   }
 
   /* blog post form start */
-
   .form {
     margin-bottom: 30px;
     width: 100%;
-    height: 600px;
+    height: 610px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -369,13 +331,12 @@
     border-radius: 12px;
     overflow-y: scroll;
     background: linear-gradient(to top, rgb(232, 229, 229, .7), rgba(254, 254, 254, .7)), url(/assets/img_1.jpg);
-    background-size: contain;
+    background-size: cover;
   }
 
   .form-box div {
     display: flex;
     width: 100%;
-    /* align-items: center; */
     flex-direction: column;
     gap: 1rem;
   }
@@ -388,7 +349,6 @@
     border: 1px solid gray;
     font-weight: bold;
     border-bottom: 3px solid #fa5d09;
-
   }
 
   .form-box input:valid,
@@ -406,7 +366,6 @@
     padding: 1rem;
     outline: none;
     border-bottom: 3px solid #fa5d09;
-
   }
 
   .form-box-action {
@@ -433,14 +392,11 @@
     align-items: center;
     justify-content: center;
   }
-
   /* blog post form end */
 
   /* media query */
-
   @media only screen and (max-width: 610px) {
     .hero-section h1 {
-      /* background-color: red; */
       font-size: 3rem;
     }
 
@@ -460,7 +416,6 @@
 
   @media only screen and (max-width: 450px) {
     .hero-section h1 {
-      /* background-color: red; */
       font-size: 2.5rem;
     }
   }

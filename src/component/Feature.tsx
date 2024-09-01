@@ -8,7 +8,7 @@ const Feature = () => {
           return (
             <div key={index} className="blog-feature-box">
               <div className="blog-feature-content">
-                <div><h3>{list.title}</h3></div>
+                <div><h3 style={{ color: list.style }}>{list.title}</h3></div>
                 <div>
                   <h2>{list.postHead}</h2>
                   <span>{list.date}</span>
@@ -26,7 +26,7 @@ const Feature = () => {
         })
 
       }
-    </div>
+    </div >
   )
 }
 

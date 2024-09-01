@@ -5,12 +5,14 @@ export const FeatureList = [
         title: 'World',
         postHead: 'Featured post',
         date: 'Nov 12',
+        style: 'rgba(0,123,255,255)'
         // content:'',
     },
     {
         title: 'Design',
         postHead: 'Post title',
         date: 'Nov 11',
+        style: 'rgba(81,182,103,255)'
     }
 ]
 
@@ -39,9 +41,9 @@ export const posts = [
     {
         title: 'Sample blog post',
         metaData: 'Januvary 1, 2014 by',
-        name:'Mark',
+        name: 'Mark',
         content: [
-            
+
         ]
     }
 ]
