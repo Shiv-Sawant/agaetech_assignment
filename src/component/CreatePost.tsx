@@ -1,19 +1,25 @@
 import { useRef, useState } from "react"
+import { format } from 'date-fns';
 
 interface ICreatePost {
-  handle: (status:boolean) => void
+  handle: (status: boolean) => void
 }
 
 const CreatePost = ({ handle }: ICreatePost) => {
   const [input, setInput] = useState<Record<string, string>>({})
   const formRef = useRef<HTMLFormElement>(null)
 
+  const formatDate = (date: Date) => {
+    return format(date, 'MMMM d, yyyy');
+  }
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+    const date = new Date
     const obj = {
       'PostBy': input.name,
       'PostTitle': input.title,
       'PostContent': input.content,
+      'PostDate': formatDate(date),
     }
     const getLocalData = localStorage.getItem('posts')
     const parseData = getLocalData && JSON.parse(getLocalData) || []

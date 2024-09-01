@@ -17,7 +17,7 @@ const PostContents = ({ datas }: IPostContents) => {
             <div className="post-section-content">
                 <div className="post-content-head">
                     <h1 className="post-content-head-title">Sample blog post</h1>
-                    <p>Januvary 1, 2014 by<span className="common-sub-header">Mark</span></p>
+                    <p>Januvary 1, 2014 by<span className="common-sub-header"> Mark </span></p>
                 </div>
                 <div className="post-content-body">
                     <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
@@ -105,7 +105,8 @@ const PostContents = ({ datas }: IPostContents) => {
                         <div className="post-section-content" key={index}>
                             <div className="post-content-head">
                                 <h1 className="post-content-head-title">{data.PostTitle}</h1>
-                                <p>December 14, 2013 by <span className="common-sub-header">{data.PostBy}</span></p>
+                                {/* <p>December 14, 2013 by <span className="common-sub-header">{data.PostBy}</span></p> */}
+                                <p>{data.PostDate} by <span className="common-sub-header">{data.PostBy}</span></p>
                             </div>
                             <div className="post-content-body">
                                 <p>
