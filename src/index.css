@@ -313,6 +313,10 @@
     justify-content: space-between;
   }
 
+  .breakline{
+    border: 1px solid rgb(229, 229, 229);
+  }
+
   /* blog post form start */
   .form {
     margin-bottom: 30px;

@@ -21,6 +21,7 @@ const PostContents = ({ datas }: IPostContents) => {
                 </div>
                 <div className="post-content-body">
                     <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
+                   <div className="breakline"></div>
                     <p>
                         Cum sociis natoque penatibus et magnis <span className="common-sub-header">dis parturient montes</span>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
                     </p>
