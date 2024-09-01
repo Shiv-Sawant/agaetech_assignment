@@ -6,7 +6,7 @@ const Navbar = () => {
       {
         NavbarList.map((list, index) => {
           return (
-            <div key={index}><a href={list}>{list}</a></div>
+            <div key={index}><a href="#">{list}</a></div>
           )
         })
       }
