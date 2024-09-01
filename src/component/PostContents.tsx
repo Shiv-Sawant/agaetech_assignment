@@ -1,12 +1,17 @@
 import { useEffect } from "react"
 
-const PostContents = ({ datas }) => {
-    const getLocalPosts: any = localStorage.getItem('posts')
-    const parseData = JSON.parse(getLocalPosts) || []
+interface IPostContents {
+    datas: boolean
+}
+
+const PostContents = ({ datas }: IPostContents) => {
+    const getLocalPosts = localStorage.getItem('posts')
+    const parseData = getLocalPosts && JSON.parse(getLocalPosts) || []
 
     useEffect(() => {
 
     }, [datas])
+
     return (
         <>
             <div className="post-section-content">

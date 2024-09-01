@@ -6,7 +6,7 @@ interface ICreatePost {
 
 const CreatePost = ({ handle }: ICreatePost) => {
   const [input, setInput] = useState<Record<string, string>>({})
-  const formRef = useRef(null)
+  const formRef = useRef<HTMLFormElement>(null)
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
