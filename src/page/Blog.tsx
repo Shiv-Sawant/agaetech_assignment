@@ -10,7 +10,7 @@ import Posts from "../component/Posts"
 const Blog = () => {
   const [isCreated, setIsCreated] = useState<boolean>(false)
 
-  const handleChildData = (data) => {
+  const handleChildData = (data: boolean) => {
     setIsCreated(data)
   }
 

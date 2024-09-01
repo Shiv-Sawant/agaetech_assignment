@@ -1,7 +1,11 @@
 import PostContents from "./PostContents"
 import PostFeature from "./PostFeature"
 
-const Posts = ({data}) => {
+interface IPosts {
+  data: boolean
+}
+
+const Posts = ({ data }: IPosts) => {
   return (
     <div className="post-section">
       <div className="post-section-box">

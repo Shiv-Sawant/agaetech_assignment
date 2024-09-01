@@ -1,6 +1,10 @@
-import {  useRef, useState } from "react"
+import { useRef, useState } from "react"
 
-const CreatePost = ({ handle}) => {
+interface ICreatePost {
+  handle: (status:boolean) => void
+}
+
+const CreatePost = ({ handle }: ICreatePost) => {
   const [input, setInput] = useState<Record<string, string>>({})
   const formRef = useRef(null)
 
@@ -11,11 +15,11 @@ const CreatePost = ({ handle}) => {
       'PostTitle': input.title,
       'PostContent': input.content,
     }
-    const getLocalData: any = localStorage.getItem('posts')
-    const parseData = JSON.parse(getLocalData) || []
+    const getLocalData = localStorage.getItem('posts')
+    const parseData = getLocalData && JSON.parse(getLocalData) || []
     parseData.push(obj)
     localStorage.setItem('posts', JSON.stringify(parseData))
-    formRef.current.reset()
+    if (formRef.current) formRef?.current?.reset()
     handle(true)
   }
 

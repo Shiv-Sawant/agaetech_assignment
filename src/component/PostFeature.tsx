@@ -1,4 +1,3 @@
-import React from 'react'
 import { Archives, Elsewhere } from '../utils/constants'
 
 const PostFeature = () => {
